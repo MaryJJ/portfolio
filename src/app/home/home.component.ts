@@ -8,9 +8,8 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {
   data = {
-    name: 'Marilys Jimenez Arguelles | Full Stack Developer',
-    bio: `Graduated in Computer Science Bachelor with more than 15 years of experience,
-    dedicated to the development of information management system and applications, enthusiast of new technologies`,
+    name: 'Marilys Jimenez | Full Stack Developer',
+    bio: `Enthusiast of new technologies and Dota2 lover`,
     image: 'https://marilys-jimenez.herokuapp.com/assets/mary.jpg',
   };
   constructor(private title: Title, private meta: Meta) {}
@@ -19,7 +18,7 @@ export class HomeComponent implements OnInit {
     this.title.setTitle(this.data.name);
     this.meta.addTags([
       { name: 'twitter:card', content: 'summary' },
-      { name: 'og:url', content: '/about' },
+      { name: 'og:url', content: '/' },
       { name: 'og:title', content: this.data.name },
       { name: 'og:description', content: this.data.bio },
       { name: 'og:image', content: this.data.image },
