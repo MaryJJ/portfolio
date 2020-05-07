@@ -9,7 +9,7 @@ import { HomeModule } from './home/home.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     HomeModule,
     AppRoutingModule,
